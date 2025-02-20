@@ -2,6 +2,7 @@
 import Navbar from "./Component/Header/Banner/Navbar"
 import Banner from "./Banner/Banner"
 import { useState } from "react"
+import Players from "./Players/Players";
 import { ToastContainer, toast } from 'react-toastify';
 function App() {
  const [addMoney,setAddMoney]=useState(0)
@@ -29,9 +30,11 @@ const handleToAddMoney=price=>{
   return (
     <div className="max-w-7xl  ">
     
-      <Navbar addMoney={addMoney} ></Navbar>
+    <Navbar addMoney={addMoney} ></Navbar>
       <Banner handleToAddMoney={handleToAddMoney} notify={notify}></Banner>
       <ToastContainer />
+     
+    
     </div>
   )
 }

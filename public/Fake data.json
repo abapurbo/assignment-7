@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "name": "Virat Kohli",
+        "img": "https://i.ibb.co.com/xKVY9R0w/virat-kohli.png",
+        "batting_style": "Right-hand bat",
+        "price": 1000000,
+        "country": "India"
+    },
+    {
+        "id": 2,
+        "name": "Rohit Sharma",
+        "img": "https://i.ibb.co.com/JRcCQdvz/rohit-sharma.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 900000,
+        "country": "India"
+    },
+    {
+        "id": 3,
+        "name": "Shikhar Dhawan",
+        "img": "https://i.ibb.co.com/20L7t8m7/shikhar-dhowan.webp",
+        "batting_style": "Left-hand bat",
+        "price": 800000,
+        "country": "India"
+    },
+    {
+        "id": 4,
+        "name": "KL Rahul",
+        "img": "https://i.ibb.co.com/jP0Msv0G/kl-Rahul.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 750000,
+        "country": "India"
+    },
+    {
+        "id": 5,
+        "name": "MS Dhoni",
+        "img": "https://i.ibb.co.com/s9Cjd7Rp/Dhoni.webp",
+        "batting_style": "Right-hand bat",
+        "price": 1200000,
+        "country": "India"
+    },
+    {
+        "id": 6,
+        "name": "Hardik Pandya",
+        "img": "https://i.ibb.co.com/RGjj2BPQ/Hardik.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 700000,
+        "country": "India"
+    },
+    {
+        "id": 7,
+        "name": "Ravindra Jadeja",
+        "img": "https://i.ibb.co.com/ZRz8VST2/Ravindra-jadeja.jpg",
+        "batting_style": "Left-hand bat",
+        "price": 600000,
+        "country": "India"
+    },
+    {
+        "id": 8,
+        "name": "Bhuvneshwar Kumar",
+        "img": "https://i.ibb.co.com/Z6QCwV4Y/bhuvneshwar-kumar.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 500000,
+        "country": "India"
+    },
+    {
+        "id": 9,
+        "name": "Jasprit Bumrah",
+        "img": "https://i.ibb.co.com/gLSct5Zk/Jasprit-Bumrah.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 950000,
+        "country": "India"
+    },
+    {
+        "id": 10,
+        "name": "Yuzvendra Chahal",
+        "img": "https://i.ibb.co.com/qFY5kN0b/Yuzvendra-Chahal.jpg",
+        "batting_style": "Right-hand bat",
+        "price": 400000,
+        "country": "India"
+    },
+    {
+        "id": 11,
+        "name": "Rishabh Pant",
+        "img": "https://i.ibb.co.com/yF2qw4Yp/Rishabh-Pant.jpg",
+        "batting_style": "Left-hand bat",
+        "price": 850000,
+        "country": "India"
+    },
+    {
+        "id": 12,
+        "name": "Ishan Kishan",
+        "img": "https://i.ibb.co.com/VpCkmxzg/Ishan-Kishan-India.jpg",
+        "batting_style": "Left-hand bat",
+        "price": 550000,
+        "country": "India"
+    },
+    {
+        "id": 13,
+        "name": "Prithvi Shaw",
+        "img": "https://i.ibb.co.com/qLBk0WLY/prithvi-shaw.webp",
+        "batting_style": "Right-hand bat",
+        "price": 300000,
+        "country": "India"
+    },
+    {
+        "id": 14,
+        "name": "Shreyas Iyer",
+        "img": "https://i.ibb.co.com/Kjd5fQGP/shreyas-iyer.webp",
+        "batting_style": "Right-hand bat",
+        "price": 650000,
+        "country": "India"
+    },
+    {
+        "id": 15,
+        "name": "Mohammed Shami",
+        "img": "https://i.ibb.co.com/S7mBWnsg/mohammed-shami.webp",
+        "batting_style": "Right-hand bat",
+        "price": 700000,
+        "country": "India"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
