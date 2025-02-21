@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Players from "../Players/Players";
-const Banner = ({handleToAddMoney}) => {
-    
+const Banner = ({handleToAddMoney,handleToChoosePlayer}) => {
+   
     return (
         <div >
         <div className="text-center z-30 absolute  mt-28 w-full">
@@ -26,13 +26,14 @@ const Banner = ({handleToAddMoney}) => {
                 </div>        
             </div>
            
-            <Players></Players>
+            <Players handleToChoosePlayer={handleToChoosePlayer}></Players>
         </div>
        
         </div>
     );
 };
 Banner.propTypes={
-    handleToAddMoney:PropTypes.func.isRequired
+    handleToAddMoney:PropTypes.func.isRequired,
+    handleToChoosePlayer:PropTypes.func
 }
 export default Banner;

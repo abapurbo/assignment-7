@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { TiFlag } from "react-icons/ti";;
 import { FaRegCircleUser } from "react-icons/fa6";
-const Player = ({ player }) => {
+const Player = ({ player,handleToChoosePlayer}) => {
     const { name, price, img, batting_style, country } = player
     return (
         <div className="rounded-2xl p-4 box-border border-1">
@@ -25,7 +25,7 @@ const Player = ({ player }) => {
                     <p >{batting_style}</p>
                     <p className="text-gray-400">{batting_style}</p>
                     <p >Price:${price}</p>
-                    <button className="border-1 border-gray-400 rounded-xl p-2">Choose Player</button>
+                    <button onClick={()=>handleToChoosePlayer(player)} className="border-1 border-gray-400 rounded-xl p-2">Choose Player</button>
                    </div>
                 </div>
             </div>
@@ -35,5 +35,6 @@ const Player = ({ player }) => {
 };
 Player.propTypes = {
     player: PropTypes.object.isRequired,
+    handleToChoosePlayer:PropTypes.func.isRequired,
 }
 export default Player;

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
-const Players = () => {
+import PropTypes from "prop-types";
+const Players = ({handleToChoosePlayer}) => {
     const [players, setPlayers] = useState([])
     useEffect(() => {
         fetch('Fake data.json')
             .then(res => res.json())
             .then(data => setPlayers(data))
     }, [])
-    console.log(players)
+   
     return (
         <div className="relative ">
             <div className="flex justify-end sticky top-[84px] mx-10 p-4 ">
@@ -24,12 +25,14 @@ const Players = () => {
             <div className="grid grid-cols-3  mx-10 p-4   gap-6">
 
                 {
-                    players.map(player => <Player key={player.id} player={player}></Player>)
+                    players.map(player => <Player key={player.id} player={player} handleToChoosePlayer={handleToChoosePlayer}></Player>)
                 }
             </div>
         </div>
 
     );
 };
-
+Players.propTypes={
+    handleToChoosePlayer:PropTypes.func,
+}
 export default Players;
