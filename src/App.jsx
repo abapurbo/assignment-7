@@ -6,6 +6,12 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
   const [addMoney, setAddMoney] = useState(0)
   const [selectedPlayer, setSelectedPlayer] = useState([])
+  console.log('selected',selectedPlayer)
+  const [displayNone, setDisplayNone] = useState({
+    cart: true,
+    status: 'active'
+  })
+
   const notify = () => toast.success("Credit added to your account", {
     position: "top-center",
     autoClose: 5000,
@@ -29,8 +35,9 @@ function App() {
   // choose player
   const handleToChoosePlayer = player => {
     const selectPlayer = player.price
+    const checkInArray = selectedPlayer.find(select => select.id == player.id);
     if (selectPlayer > addMoney) {
-      toast.warn('Not found your coin', {
+      toast.warn('Not found your credit', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -43,7 +50,8 @@ function App() {
       })
 
     }
-    else if (selectedPlayer.id == player.id) {
+
+    else if (checkInArray) {
       toast.error('Player already selected', {
         position: "top-center",
         autoClose: 5000,
@@ -55,33 +63,71 @@ function App() {
         theme: "light",
       })
 
+
+
     }
+   
     else {
-      toast.success(`Congrates!!,${player.name} is now in your squad`, {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-
-
-      });
-      setAddMoney(addMoney - player.price)
-      setSelectedPlayer(player)
-      console.log(player.price)
-
+      if(selectedPlayer.length<6){
+        toast.success(`Congrates!!,${player.name} is now in your squad`, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+  
+  
+        });
+        setAddMoney(addMoney - player.price)
+  
+  
+        const newPlayer = [...selectedPlayer, player]
+        setSelectedPlayer(newPlayer)
+  
+      }
+      else{
+        toast.error('Your are only 6 player selected', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        })
+      }
+    
 
     }
 
   }
+  // display none section 
+  const handleIsDisplayNone = status => {
+    if (status == 'addCart') {
+      setDisplayNone({
+        cart: true,
+        status: 'active'
+      })
+     
+    }
+    else{
+      setDisplayNone({
+        cart:false,
+        status:'active'
+      })
+    }
+  }
   return (
-    <div className="max-w-7xl  ">
+    <div className="max-w-7xl relative ">
 
       <Navbar addMoney={addMoney} ></Navbar>
-      <Banner handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer}></Banner>
+      <Banner handleIsDisplayNone={handleIsDisplayNone} displayNone={displayNone} handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer} selectedPlayer={selectedPlayer}></Banner>
+
+
       <ToastContainer />
 
 
