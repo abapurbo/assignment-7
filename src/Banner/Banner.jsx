@@ -3,7 +3,7 @@ import Players from "../Players/Players";
 const Banner = ({handleToAddMoney}) => {
     
     return (
-        <>
+        <div >
         <div className="text-center z-30 absolute  mt-28 w-full">
             <div className="bg-[url('bg-shadow.png')] rounded-3xl h-[500px] bg-black mx-10 flex justify-center items-center  my-4">
                 <div className="flex flex-col items-center justify-center">
@@ -23,12 +23,13 @@ const Banner = ({handleToAddMoney}) => {
                         </div>
                        
                     </div>
-                </div>
+                </div>        
             </div>
+           
             <Players></Players>
         </div>
        
-        </>
+        </div>
     );
 };
 Banner.propTypes={

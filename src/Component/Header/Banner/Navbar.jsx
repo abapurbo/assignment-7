@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Navbar = ({addMoney}) => {
     return (
         <div>
-            <div className="flex z-40 fixed w-full mt-0 justify-between px-10 space-y-2 py-4 bg-white/30 backdrop-blur-none">
+            <div className="flex z-40 fixed w-full mt-0 justify-between px-10 space-y-2 py-4 bg-white/30 backdrop-blur">
                 <img className="w-16" src="logo.png" alt="logo image" />
                 <div className="flex justify-between items-center ">
                     <div className="space-x-7">
