@@ -3,6 +3,7 @@ import Navbar from "./Component/Header/Banner/Navbar"
 import Banner from "./Banner/Banner"
 import { useState } from "react"
 import { ToastContainer, toast } from 'react-toastify';
+
 function App() {
   const [addMoney, setAddMoney] = useState(0)
   const [selectedPlayer, setSelectedPlayer] = useState([])
@@ -131,14 +132,15 @@ function App() {
     <div className="max-w-7xl relative ">
 
       <Navbar addMoney={addMoney} ></Navbar>
-      <Banner handleIsDisplayNone={handleIsDisplayNone} displayNone={displayNone} handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer} selectedPlayer={selectedPlayer}  handleIsRemovePlayer={handleIsRemovePlayer}>
      
+      <Banner handleIsDisplayNone={handleIsDisplayNone} displayNone={displayNone} handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer} selectedPlayer={selectedPlayer}  handleIsRemovePlayer={handleIsRemovePlayer}>
       </Banner>
-
-
+      
       <ToastContainer />
+     
+     
 
-
+     
     </div>
   )
 }

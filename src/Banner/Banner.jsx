@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Players from "../Players/Players";
 import Selected from "../Selected/Selected";
-
+import Footer from "../Footer/Footer";
 const Banner = (props) => {
     const { handleToAddMoney, displayNone, handleIsDisplayNone,selectedPlayer,handleIsRemovePlayer } = props
     return (
@@ -29,8 +29,8 @@ const Banner = (props) => {
                 </div>
             </div>
             {/* button section */}
-            <div className="flex justify-end w-full z-30 sticky top-17  p-8 ">
-                <div className="border py-3.5  border-gray-300 rounded-xl box-border  text-xl text-[#969696] font-semibold] ">
+            <div className="flex justify-end w-full z-30 sticky top-17 p-8 ">
+                <div className="border py-4.5 px-1.5 border-gray-300 rounded-xl box-border  text-xl text-[#969696] font-semibold] ">
                     <span onClick={() => handleIsDisplayNone('addCart')} className={displayNone.cart ? `active px-8 py-3.5 rounded-l-xl  cursor-pointer` : ` px-8 py-3.5 rounded-l-xl  cursor-pointer`} >Available</span>
                     <span onClick={() => handleIsDisplayNone('availableCart')} className={displayNone.cart ? ` px-5 py-3.5 rounded-r-xl  cursor-pointer` : `active px-5 py-3.5 rounded-r-xl  cursor-pointer`}>Selected({selectedPlayer.length})</span>
                 </div>
@@ -42,7 +42,7 @@ const Banner = (props) => {
                 }
            
          
-              
+           <Footer></Footer>
         </div>
     );
 };

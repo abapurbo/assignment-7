@@ -6,7 +6,7 @@ const Player = ({ player,handleToChoosePlayer}) => {
     return (
         <div className="rounded-2xl p-4 box-border border-1">
             <div className="box-border h-60  ">
-                <img className="w-full h-full object-cover bg-center rounded-2xl" src={img} alt="" />
+                <img className="w-full h-full object-down rounded-2xl" src={img} alt="" />
             </div>
             <div>
                 <div className="flex flex-col ">
