@@ -7,7 +7,7 @@ const Banner = (props) => {
     return (
         <div className="absolute top-24 w-full">
             <div className="text-center z-30 w-full ">
-                <div className="bg-[url('bg-shadow.png')] rounded-3xl h-[500px] bg-black mx-10 flex justify-center items-center  my-4">
+                <div className="bg-[url('Backgroundshadow.png')] rounded-3xl h-[500px] bg-black mx-10 flex justify-center items-center  my-4">
                     <div className="flex flex-col items-center justify-center">
 
                         <img className="w-72" src="banner-main.png" alt="" />
