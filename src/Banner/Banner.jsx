@@ -3,7 +3,7 @@ import Players from "../Players/Players";
 import Selected from "../Selected/Selected";
 
 const Banner = (props) => {
-    const { handleToAddMoney, displayNone, handleIsDisplayNone,selectedPlayer } = props
+    const { handleToAddMoney, displayNone, handleIsDisplayNone,selectedPlayer,handleIsRemovePlayer } = props
     return (
         <div className="absolute top-24 w-full">
             <div className="text-center z-30 w-full ">
@@ -38,7 +38,7 @@ const Banner = (props) => {
            
                 
                 {
-                    displayNone.cart ? <Players {...props}></Players> : <Selected selectedPlayer={selectedPlayer}></Selected>
+                    displayNone.cart ? <Players {...props}></Players> : <Selected handleIsDisplayNone={handleIsDisplayNone} selectedPlayer={selectedPlayer} handleIsRemovePlayer={handleIsRemovePlayer}></Selected>
                 }
            
          
@@ -51,5 +51,6 @@ Banner.propTypes = {
     handleIsDisplayNone: PropTypes.func,
     displayNone: PropTypes.func,
     selectedPlayer:PropTypes.func,
+    handleIsRemovePlayer:PropTypes.func
 }
 export default Banner;

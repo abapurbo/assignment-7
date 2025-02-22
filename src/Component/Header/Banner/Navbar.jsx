@@ -14,7 +14,7 @@ const Navbar = ({addMoney}) => {
                     </div>
 
                     <p className="flex justify-between  items-center space-x-2 p-2 ml-10 border-2 border-gray-200 rounded-[11px]">
-                        <span className="text-xl font-semibold">{addMoney}</span>
+                        <span className="text-xl font-semibold">${addMoney}</span>
                         <span className="text-xl font-semibold">Coin</span>
                         <TbCoin className="text-2xl text-[#F39E09] " />
                     </p>

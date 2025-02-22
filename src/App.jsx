@@ -121,11 +121,19 @@ function App() {
       })
     }
   }
+  // remove selected player 
+  const handleIsRemovePlayer=select=>{
+    console.log(select)
+    const searchPlayer=selectedPlayer.filter(removePlayer=>removePlayer.id!=select.id)
+     setSelectedPlayer(searchPlayer)
+  }
   return (
     <div className="max-w-7xl relative ">
 
       <Navbar addMoney={addMoney} ></Navbar>
-      <Banner handleIsDisplayNone={handleIsDisplayNone} displayNone={displayNone} handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer} selectedPlayer={selectedPlayer}></Banner>
+      <Banner handleIsDisplayNone={handleIsDisplayNone} displayNone={displayNone} handleToAddMoney={handleToAddMoney} handleToChoosePlayer={handleToChoosePlayer} selectedPlayer={selectedPlayer}  handleIsRemovePlayer={handleIsRemovePlayer}>
+     
+      </Banner>
 
 
       <ToastContainer />
