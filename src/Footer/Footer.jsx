@@ -7,7 +7,7 @@ const Footer = () => {
          w-full h-[770px] relative">
             <div className=" border-1 border-gray-300 bg-white/10  backdrop-blur rounded-3xl p-6 absolute bottom-[550px] w-[1150px] h-96  mx-16">
                 {/* footer search section */}
-                <div className=" bg-[url('bg-shadow.png')] bg-white h-full flex flex-col justify-center p-20  rounded-3xl">
+                <div className="bg-[url('https://i.ibb.co.com/3913jzJV/bg-shadow.png')]  bg-white h-full flex flex-col justify-center p-20  rounded-3xl">
                    <div className=" text-center space-y-2">
                      <h1 className="text-3xl text-black font-bold">Subscribe to our Newsletter</h1>
                      <h1 className="text-xl text-gray-500 font-medium ">Get the latest updates and news right in your inbox!</h1>
